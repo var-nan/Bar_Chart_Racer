@@ -14,8 +14,8 @@ public class Bar implements Comparable<Bar> {
 
     public Bar(String name, int value, String category) {
       if (name == null) throw new IllegalArgumentException("Name is null");
-      if (value == null) throw new IllegalArgumentException("Value is negative");
-      if(category == null) throw new IllegalArgumentException("category is null")
+      if (value < 0) throw new IllegalArgumentException("Value is negative");
+      if(category == null) throw new IllegalArgumentException("category is null");
 
         this.name = name;
         this.value = value;

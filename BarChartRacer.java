@@ -11,23 +11,18 @@
  *                6. endgame.txt
  *                7. The-avengers-.wav
  *
+ *  NOTE::
  *  Place all these files in the same directory along with the main program file.
- *  These additional files are used by the program to run and produce result.
  *
- *  This program produces an animated bar chart by reading continous data
- *   from an input source.
- *  The input file has a particular format.
  *
  *  For more info, visit
  *  https://coursera.cs.princeton.edu/introcs/assignments/barchart/specification.php
  *
  *
  *
+ *  @author: KRS Nandhan
  *
- *
- *   @author KRS Nandhan
- *
- *  Last modified:    4/06/2020
+ *  Last modified:    8/06/2020
  **************************************************************************** */
 
 import java.util.Arrays;
@@ -73,13 +68,14 @@ public class BarChartRacer {
                 int value = Integer.parseInt(v);
                 bar[i] = new Bar(arr[1], value, arr[4]);  // creating new bar for each line.
                 chart.setCaption(arr[0]);
-              
+
             } // for loop
 
-            // display the bars that are greater than zero.
-            if (bar[0].getValue() > 0) {
             Arrays.sort(bar);  // sorting the array by values.
 
+            // display the bars that are greater than zero.
+            if (bar[bar.length-count].getValue() > 0) {
+            
             // adding the bars to the barchart object.
             for (int i = (bar.length - 1); i >= (bar.length - count); i--) {
                 chart.add(bar[i].getName(), bar[i].getValue(), bar[i].getCategory());
