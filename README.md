@@ -5,7 +5,7 @@
  * This repository contains a main java file BarChartRacer.java and seven files.
  * The main program file is BarChartRacer.java
  *
- * compilation : java BarChartRacer.java
+ * compilation : javac BarChartRacer.java
  * execution : java BarChartRacer endgame.txt 10
  *
  * The program uses some Standard Library files which are created by
