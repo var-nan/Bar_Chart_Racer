@@ -3,8 +3,10 @@
  *  animated Bar Chartusing Java.
  *
  * This repository contains a main java file BarChartRacer.java and seven files.
- * There are seven other helper files which is used by the main program to
- *   produce output.
+ * The main program file is BarChartRacer.java
+ *
+ * compilation : java BarChartRacer.java
+ * execution : java BarChartRacer endgame.txt 10
  *
  * The program uses some Standard Library files which are created by
  *    Robert Sedgewick & Kevin Wayne.
@@ -14,9 +16,10 @@
  *  during compilation.
  *
  * This program is the solution for the final assignment of Coursera MOOC,
- *          "COMPUTER SCIENCE : PROGRAMMING WITH A PURPOSE"
- *    by Robert Sedgewick & Kevin Wayne. Offered by PRINCETON UNIVERSITY.
+ *         "COMPUTER SCIENCE : PROGRAMMING WITH A PURPOSE"
+ * by Robert Sedgewick & Kevin Wayne. Offered by PRINCETON UNIVERSITY.
  *
- *  For more info, visit
+ * For more info, visit
  https://coursera.cs.princeton.edu/introcs/assignments/barchart/specification.php
+
  */
